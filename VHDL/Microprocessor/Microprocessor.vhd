@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    19:47:58 03/01/2019 
+-- Create Date:    21:21:13 04/10/2019 
 -- Design Name: 
 -- Module Name:    Microprocessor - Behavioral 
 -- Project Name: 
@@ -17,8 +17,11 @@
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_arith.ALL;
+use IEEE.STD_LOGIC_unsigned.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -27,21 +30,20 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
 --library UNISIM;
---use UNISIM.VComponents.all;
+--use UNISIM.VComponents.all; 
 
-entity Microprocessor is
+entity Microprocessor is  
 
-	port( 
-			clock : in std_logic ;
+	port(  
+			clock : in std_logic ; 
 			data_out : out std_logic_vector ( (16-1) downto 0 ) ;
 			data_in : in std_logic_vector ( 3 downto 0 ) ;
-			--Clock : in std_logic ;
          reset : in std_logic			
 			);
-end Microprocessor;
+end Microprocessor; 
  
-architecture Behavioral of Microprocessor is
-
+architecture Behavioral of Microprocessor is 
+ 
 ------------------------------------ signals ------------------------------------
 ---------------------------------------------------------------------------------
 
@@ -65,10 +67,12 @@ signal Program_Counter_Output : std_logic_vector (15 downto 0); --elly khareg mn
 signal ZF : std_logic; --el zero flag elli tale3 mn el alu w dakhel 3la el circuit bta3et el branch
 signal AND1_to_OR : std_logic; --el selk elli bin awl AND gate w el OR gate
 signal AND2_to_OR : std_logic; --el selk elli bin tani AND gate w el OR gate
-signal SPC3 : std_logic; ----------------------------------------------------------------------------eroorrrrrrr
+signal SPC3 : std_logic; 
 signal inport_to_DATA_in_RF : std_logic_vector ( 15 downto 0 ) ;
 signal Rmux5_to_DATA_in_RF : std_logic_vector ( 15 downto 0 ) ;
 signal ALU_MUX4to1 : std_logic_vector ( 2 downto 0 ) ;
+
+signal S_ALU_mux_3 : std_logic ;
 
 ----------------------------------- control unit -----------------------------------------------------
 
@@ -93,7 +97,7 @@ signal Reset_Of_RF: std_logic ;
 
 ------------------------------- top level signals --------------------------------
 
-signal skew_clock : std_logic ;
+-- signal skew_clock : std_logic ;
 signal global_reset : std_logic ;
 signal out_signal_top_level : std_logic_vector (15 downto 0 ) ;
 signal in_signal_top_level : std_logic_vector (3 downto 0 ) ;
@@ -126,7 +130,7 @@ end component ;
 component mux4to1 is
 
 port( A : in std_logic_vector ( 2 downto 0 ) ; 
-      S1,S2: in std_logic ;
+      S1,S2,s3: in std_logic ;
       O: out std_logic_vector ( 2 downto 0 ) 
   );
 end component;
@@ -206,14 +210,14 @@ component RAM is
 	port (
 			clock : in std_logic ;
 			W_enable : in std_logic ;
-			Address : in std_logic_vector ( 15 downto 0 ) ;
+			Address : in std_logic_vector ( 5 downto 0 ) ;
 			Data_in : in std_logic_vector ( 15 downto 0 ) ;
 			Data_out : out std_logic_vector ( 15 downto 0 ) );
 end component;
 
 component ROM is
 	port (
-			Address : in std_logic_vector ( 15 downto 0 ) ;
+			Address : in std_logic_vector ( 9 downto 0 ) ;
 			Data_out : out std_logic_vector ( 15 downto 0 ) );
 end component;
 
@@ -237,13 +241,13 @@ port map ( w0=>PCmux2_to_PCmux1,
       sel=> spc1,
       f=>program_counter_input  );
 M2 : Mux
-port map ( w0=>PCmux3_to_PCmux2,
-           w1=>program_counter_output(15 downto 12) & instruction (11 downto 0 ) ,
+port map ( w0=> program_counter_output(15 downto 12) & instruction (11 downto 0 ) ,
+           w1=> PCmux3_to_PCmux2 ,
            sel => spc2,
            f=>PCmux2_to_PCmux1);
 M3 : Mux
-port map ( w0=>ADDER2_to_pcmux3 ,
-           w1=>program_counter_inc,
+port map ( w0=> program_counter_inc,
+           w1=> ADDER2_to_pcmux3 , 
            sel => spc3,
            f =>PCmux3_to_PCmux2 );
 M4 : mux_21_3
@@ -294,15 +298,16 @@ X1 : reg_file port map (
 						   Write_register => Rmux1_to_WREG , 
                      Data_in => Rmux5_to_DATA_in_RF ,   
 						   Write_enable =>  WRF ,  
-						   clk => skew_clock , 
+						   clk => clock , 
 						   reset => Reset_Of_RF ,
 						   Read_Data1 => R1 , 
 						   Read_Data2 => R2 ) ; 		
 -- PORT MAPPING FOR MUX4TO1 which control ALU Operation  -- 
 X4 : mux4to1  port map (	
                      A => instruction ( 2 downto 0 ) , 
-						   S1 => SALU0 ,
-						   S2 => SALU1 ,
+						   S1 => SALU1 ,
+						   S2 => SALU0 ,
+							S3 => S_ALU_mux_3 ,
 						   O => ALU_MUX4to1 ) ; 
 
 ---------------------------- control unit -----------------------							
@@ -331,7 +336,7 @@ CU1: Control_Unit port map (
 U1: programcounter 
 port map ( load_pc => Program_Counter_Input,
            pc_out => Program_Counter_Output,
-           clock => skew_clock ,
+           clock => clock ,
            reset => Reset_Of_PC ,
            ld =>LPC );
 			  
@@ -343,7 +348,7 @@ In_latch: input_latch port map (
 			  
 Output_port: output_latch port map (
 
-		clk => skew_clock ,
+		clk => clock ,
 		Load => LOP ,
 		latch_output_Data => out_signal_top_level ,
 		latch_input_Data => R1    );
@@ -373,9 +378,9 @@ ADDER1: a_16_bit_adder port map (
 ------------------------------------------ memories ---------------------------------------
 Data_mem: RAM port map ( 
 
-		clock => skew_clock ,
+		clock => clock ,
 		W_enable => WRAM ,
-		Address => ALU_Result ,
+		Address => ALU_Result ( 5 downto 0)  ,
 		Data_in => R2 ,
 		Data_out => D_to_DATA_in_RF 
 
@@ -383,23 +388,21 @@ Data_mem: RAM port map (
 
 instruction_mem: Rom port map (
 		
-		Address => Program_Counter_Output ,
+		Address => Program_Counter_Output ( 9 downto 0) ,
 		Data_out => Instruction 
 
 );
 			  
-			  
+			   
 ---------------------------------- top level connections -------------------------------
 
 		AND1_to_OR <= (BRCE) AND (ZF) ;
 		AND2_to_OR <= (BRCNE) AND (Not(ZF)) ;
 		SPC3 <= (AND2_to_OR) OR (AND1_to_OR) ;
-		skew_clock <= clock ;
-		global_reset <= not (reset) ;	 
+		S_ALU_mux_3 <= ( BRCE ) OR (BRCNE ) ;
+		--skew_clock <= clock ; 
+		global_reset <= not(reset) ;	 
 		in_signal_top_level <= data_in ;
 		data_out <= out_signal_top_level ;
 		
 end Behavioral;
-
-
-
