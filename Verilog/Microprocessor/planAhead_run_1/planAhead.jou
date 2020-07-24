@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sat Jun 06 05:55:18 2020
+# Process ID: 18184
+# Log file: C:/Users/Tefa/Desktop/LAST_YEAR/Microprocessor/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Tefa/Desktop/LAST_YEAR/Microprocessor/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Tefa/Desktop/LAST_YEAR/Microprocessor/pa.fromNetlist.tcl

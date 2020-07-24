@@ -1,0 +1,95 @@
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Microprocessor.ngc ...
+WARNING:NetListWriters:298 - No output is written to Microprocessor.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus ALURESULT<15 : 0> on block
+   Microprocessor is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus ALUB<15 : 1> on block Microprocessor is
+   not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file Microprocessor.edif ...
+ngc2edif: Total memory usage is 4319344 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design RamMips.ngc ...
+WARNING:NetListWriters:298 - No output is written to RamMips.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file RamMips.edif ...
+ngc2edif: Total memory usage is 4312752 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Microprocessor.ngc ...
+WARNING:NetListWriters:298 - No output is written to Microprocessor.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus INS<15 : 0> on block Microprocessor is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ALURESULT<15 : 0> on block
+   Microprocessor is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus ALUB<15 : 0> on block Microprocessor is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus n0038[12:0]<10 : 0> on block
+   Microprocessor is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_n0038[12:0]_cy<10 : 0> on block
+   Microprocessor is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus RF/MEM_7<127 : 0> on block
+   Microprocessor is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file Microprocessor.edif ...
+ngc2edif: Total memory usage is 4314224 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design RamMips.ngc ...
+WARNING:NetListWriters:298 - No output is written to RamMips.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file RamMips.edif ...
+ngc2edif: Total memory usage is 4313520 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Microprocessor.ngc ...
+WARNING:NetListWriters:298 - No output is written to Microprocessor.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus INS<15 : 0> on block Microprocessor is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ALURESULT<15 : 0> on block
+   Microprocessor is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus ALUB<15 : 0> on block Microprocessor is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus n0038[12:0]<10 : 0> on block
+   Microprocessor is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus Madd_n0038[12:0]_cy<10 : 0> on block
+   Microprocessor is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus RF/MEM_7<127 : 0> on block
+   Microprocessor is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file Microprocessor.edif ...
+ngc2edif: Total memory usage is 4313712 kilobytes
+

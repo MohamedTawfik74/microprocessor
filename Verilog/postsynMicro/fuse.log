@@ -1,0 +1,40 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Tefa/Desktop/LAST_YEAR/postsynMicro/Microprocessor_isim_beh.exe -prj C:/Users/Tefa/Desktop/LAST_YEAR/postsynMicro/Microprocessor_beh.prj work.Microprocessor work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Tefa/Desktop/LAST_YEAR/postsynMicro/../Microprocessor/netgen/synthesis/Microprocessor_synthesis.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+WARNING:HDLCompiler:687 - "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 160700 KB
+Fuse CPU Usage: 327 ms
+Compiling module VCC
+Compiling module GND
+Compiling module RAM32M
+Compiling module RAM128X1S
+Compiling module RAM16X1D
+Compiling module MUXCY
+Compiling module XORCY
+Compiling module LUT2(INIT=4'b0110)
+Compiling module FDCE
+Compiling module FDE
+Compiling module LUT4(INIT=16'b0111111111111111)
+Compiling module LUT5(INIT=32'b101100111001000110...
+Compiling module LUT6(INIT=64'b110011001111000010...
+Compiling module IBUF
+Compiling module OBUF
+Compiling module LUT1(INIT=2'b10)
+Compiling module LUT3(INIT=8'b11111011)
+Compiling module MUXF7
+Compiling module BUFGP
+Compiling module INV
+Compiling module Microprocessor
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 82 Verilog Units
+Built simulation executable C:/Users/Tefa/Desktop/LAST_YEAR/postsynMicro/Microprocessor_isim_beh.exe
+Fuse Memory Usage: 168328 KB
+Fuse CPU Usage: 1155 ms

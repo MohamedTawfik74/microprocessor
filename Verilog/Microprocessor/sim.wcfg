@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Tefa/Desktop/LAST_YEAR/Microprocessor/Microprocessor_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Microprocessor" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="27" />
+   <wvobject fp_name="/Microprocessor/INPUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">INPUT[3:0]</obj_property>
+      <obj_property name="ObjectShortName">INPUT[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/ClK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ClK</obj_property>
+      <obj_property name="ObjectShortName">ClK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/RESET" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/OUTPUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">OUTPUT[15:0]</obj_property>
+      <obj_property name="ObjectShortName">OUTPUT[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/M_RESET" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">M_RESET</obj_property>
+      <obj_property name="ObjectShortName">M_RESET</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/ZeroFlag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ZeroFlag</obj_property>
+      <obj_property name="ObjectShortName">ZeroFlag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/Control" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Control[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Control[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/PCOUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PCOUT[15:0]</obj_property>
+      <obj_property name="ObjectShortName">PCOUT[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/PCINC" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PCINC[15:0]</obj_property>
+      <obj_property name="ObjectShortName">PCINC[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/PCJUMP" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PCJUMP[15:0]</obj_property>
+      <obj_property name="ObjectShortName">PCJUMP[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/PCIN" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PCIN[15:0]</obj_property>
+      <obj_property name="ObjectShortName">PCIN[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/PCOFFSET" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PCOFFSET[15:0]</obj_property>
+      <obj_property name="ObjectShortName">PCOFFSET[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/PCOFFSETM" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PCOFFSETM[15:0]</obj_property>
+      <obj_property name="ObjectShortName">PCOFFSETM[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/INS" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">INS[15:0]</obj_property>
+      <obj_property name="ObjectShortName">INS[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/OFFSET" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">OFFSET[15:0]</obj_property>
+      <obj_property name="ObjectShortName">OFFSET[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/WADD" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WADD[2:0]</obj_property>
+      <obj_property name="ObjectShortName">WADD[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/ALUFUNC" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUFUNC[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUFUNC[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/RFDATA" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RFDATA[15:0]</obj_property>
+      <obj_property name="ObjectShortName">RFDATA[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/R1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">R1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">R1[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/R2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">R2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">R2[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/ALUB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUB[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUB[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/ALURESULT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALURESULT[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ALURESULT[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/RAMOUT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RAMOUT[15:0]</obj_property>
+      <obj_property name="ObjectShortName">RAMOUT[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/BRANCH" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">BRANCH</obj_property>
+      <obj_property name="ObjectShortName">BRANCH</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/InputPortSize" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">InputPortSize[31:0]</obj_property>
+      <obj_property name="ObjectShortName">InputPortSize[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/OutputPortSize" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">OutputPortSize[31:0]</obj_property>
+      <obj_property name="ObjectShortName">OutputPortSize[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Microprocessor/BusWidth" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">BusWidth[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BusWidth[31:0]</obj_property>
+   </wvobject>
+</wave_config>

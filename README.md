@@ -27,7 +27,7 @@ Each component is implemented separately and reached the expectations in the tes
 
 The main file for VHDL is "VHDL\Microprocessor\Microprocessor.vhd"
 
-The main file for Verilog is "Verilog\MP.v"
+The main file for Verilog is "Verilog\Microprocessor\Microprocessor.v"
 
 ## Assembly Layer
 

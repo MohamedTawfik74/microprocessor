@@ -1,0 +1,14 @@
+[Inputs]
+CLK
+WEN
+=ADD1[2:0]=
+=ADD2[2:0]=
+=WADD[2:0]=
+=DATAIN[15:0]=
+[Outputs]
+=R1[15:0]=
+=R2[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel registerfile
+

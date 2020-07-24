@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sat Jun 06 05:55:18 2020
+# Process ID: 18184
+# Log file: C:/Users/Tefa/Desktop/LAST_YEAR/Microprocessor/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Tefa/Desktop/LAST_YEAR/Microprocessor/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/Tefa/Desktop/LAST_YEAR/Microprocessor/pa.fromNetlist.tcl
+# create_project -name Microprocessor -dir "C:/Users/Tefa/Desktop/LAST_YEAR/Microprocessor/planAhead_run_1" -part xc6slx9tqg144-2
+create_project: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 446.391 ; gain = 58.016
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Users/Tefa/Desktop/LAST_YEAR/Microprocessor/Microprocessor.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/Tefa/Desktop/LAST_YEAR/Microprocessor} }
+# set_property target_constrs_file "E:/Digital Career/My_Final_Study/Projects/test/Microprocessor/Microprocessor.ucf" [current_fileset -constrset]
+Adding file 'E:/Digital Career/My_Final_Study/Projects/test/Microprocessor/Microprocessor.ucf' to fileset 'constrs_1'
+# add_files [list {E:/Digital Career/My_Final_Study/Projects/test/Microprocessor/Microprocessor.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx9tqg144-2
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Microprocessor.ngc ...
+WARNING:NetListWriters:298 - No output is written to Microprocessor.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus ALURESULT<15 : 0> on block
+   Microprocessor is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus ALUB<15 : 1> on block Microprocessor is
+   not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file Microprocessor.edif ...
+ngc2edif: Total memory usage is 4319344 kilobytes
+
+Parsing EDIF File [./planAhead_run_1/Microprocessor.data/cache/Microprocessor_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_1/Microprocessor.data/cache/Microprocessor_ngc_zx.edif]
+INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'Microprocessor' is not ideal for floorplanning, since the cellview 'Microprocessor' defined in file 'Microprocessor.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [E:/Digital Career/My_Final_Study/Projects/test/Microprocessor/Microprocessor.ucf]
+Finished Parsing UCF File [E:/Digital Career/My_Final_Study/Projects/test/Microprocessor/Microprocessor.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 29 instances were transformed.
+  BUFGP => BUFGP (IBUF, BUFG): 1 instances
+  RAM128X1S => RAM128X1S (RAMS64E, RAMS64E, MUXF7): 16 instances
+  RAM16X1D => RAM16X1D (RAMD32, RAMD32, GND): 8 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+
+Phase 0 | Netlist Checksum: 08af0735
+link_design: Time (s): elapsed = 00:00:32 . Memory (MB): peak = 647.270 ; gain = 197.566
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See C:/Users/Tefa/Desktop/LAST_YEAR/Microprocessor\planAhead_pid18184.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sat Jun 06 06:03:24 2020...
+INFO: [Common 17-83] Releasing license: PlanAhead

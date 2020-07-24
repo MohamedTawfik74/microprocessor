@@ -1,0 +1,108 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Jun 24 12:02:27 2020
+# Process ID: 12832
+# Log file: C:/Users/Tefa/Desktop/LAST_YEAR/Microprocessor/planAhead_run_4/planAhead.log
+# Journal file: C:/Users/Tefa/Desktop/LAST_YEAR/Microprocessor/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/Users/Tefa/Desktop/LAST_YEAR/Microprocessor/pa.fromHdl.tcl
+# create_project -name Microprocessor -dir "C:/Users/Tefa/Desktop/LAST_YEAR/Microprocessor/planAhead_run_4" -part xc6slx9tqg144-2
+create_project: Time (s): elapsed = 00:00:05 . Memory (MB): peak = 439.375 ; gain = 59.852
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "E:/Digital Career/My_Final_Study/Projects/test/Microprocessor/Microprocessor.ucf" [current_fileset -constrset]
+Adding file 'E:/Digital Career/My_Final_Study/Projects/test/Microprocessor/Microprocessor.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {../signextension/signextension.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../registerfile/registerfile.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../programcounter/programcounter.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../output_port/output_port.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../mux_4_1/mux_4_1.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../mux_2_1/mux_2_1.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../mux8_1/mux8_1.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../insmem/insmem.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../input_port/input_port.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../datamem/datamem.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../controlunit/controlunit.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../alu/alu.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Microprocessor.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top Microprocessor $srcset
+# add_files [list {E:/Digital Career/My_Final_Study/Projects/test/Microprocessor/Microprocessor.ucf}] -fileset [get_property constrset [current_run]]
+# add_files [list {ipcore_dir/RamMips.ncf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-2
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/Users/Tefa/Desktop/LAST_YEAR/signextension/signextension.v" into library work
+Analyzing Verilog file "C:/Users/Tefa/Desktop/LAST_YEAR/registerfile/registerfile.v" into library work
+Analyzing Verilog file "C:/Users/Tefa/Desktop/LAST_YEAR/programcounter/programcounter.v" into library work
+Analyzing Verilog file "C:/Users/Tefa/Desktop/LAST_YEAR/output_port/output_port.v" into library work
+Analyzing Verilog file "C:/Users/Tefa/Desktop/LAST_YEAR/mux_4_1/mux_4_1.v" into library work
+Analyzing Verilog file "C:/Users/Tefa/Desktop/LAST_YEAR/mux_2_1/mux_2_1.v" into library work
+Analyzing Verilog file "C:/Users/Tefa/Desktop/LAST_YEAR/mux8_1/mux8_1.v" into library work
+Analyzing Verilog file "C:/Users/Tefa/Desktop/LAST_YEAR/insmem/insmem.v" into library work
+Analyzing Verilog file "C:/Users/Tefa/Desktop/LAST_YEAR/input_port/input_port.v" into library work
+Analyzing Verilog file "C:/Users/Tefa/Desktop/LAST_YEAR/datamem/datamem.v" into library work
+Analyzing Verilog file "C:/Users/Tefa/Desktop/LAST_YEAR/controlunit/controlunit.v" into library work
+Analyzing Verilog file "C:/Users/Tefa/Desktop/LAST_YEAR/alu/alu.v" into library work
+Analyzing Verilog file "C:/Users/Tefa/Desktop/LAST_YEAR/Microprocessor/Microprocessor.v" into library work
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [E:/Digital Career/My_Final_Study/Projects/test/Microprocessor/Microprocessor.ucf]
+Finished Parsing UCF File [E:/Digital Career/My_Final_Study/Projects/test/Microprocessor/Microprocessor.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 96af237c
+open_rtl_design: Time (s): elapsed = 00:00:32 . Memory (MB): peak = 621.148 ; gain = 177.723
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P143 [get_ports {OUTPUT[11]}]
+endgroup
+save_constraints
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See C:/Users/Tefa/Desktop/LAST_YEAR/Microprocessor\planAhead_pid12832.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Wed Jun 24 12:08:22 2020...
+INFO: [Common 17-83] Releasing license: PlanAhead

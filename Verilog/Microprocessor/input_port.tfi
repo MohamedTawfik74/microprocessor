@@ -1,0 +1,10 @@
+
+
+
+// Instantiate the module
+input_port instance_name (
+    .INPUT(INPUT), 
+    .INPUTD(INPUTD)
+    );
+
+

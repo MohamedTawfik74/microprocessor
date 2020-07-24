@@ -1,0 +1,15 @@
+# Output products list for <RamMips>
+RamMips.asy
+RamMips.gise
+RamMips.ngc
+RamMips.sym
+RamMips.v
+RamMips.veo
+RamMips.xco
+RamMips.xise
+RamMips\blk_mem_gen_v7_3_readme.txt
+RamMips\doc\blk_mem_gen_v7_3_vinfo.html
+RamMips\doc\pg058-blk-mem-gen.pdf
+RamMips_flist.txt
+RamMips_xmdf.tcl
+summary.log
